@@ -1,5 +1,7 @@
-Ramin Yazdani | pytorch-token-dataset | main | WIP(docs): Add initial README with project overview
+Ramin Yazdani | pytorch-token-dataset | main | WIP(deps): Add requirements.txt with core dependencies
 
-Added basic README.md file outlining the project goals and planned features. The README provides initial context for the project's purpose - implementing custom PyTorch Dataset classes for token-based data processing with automatic padding support.
+Added requirements.txt specifying the core Python dependencies needed for the project: PyTorch for the Dataset interface and tensor operations, NumPy for numerical computing, scikit-learn for train/validation splitting utilities, and Jupyter for the notebook development environment.
 
-This establishes the project's scope and helps future contributors (or ourselves) understand what we're building. At this early stage, the README outlines planned features while actual implementation will follow in subsequent commits.
+At this stage, we're including only the dependencies needed for the core TokenDataset functionality. Additional dependencies (like pandas for CSV support) will be added later when that functionality is implemented.
+
+This allows developers to set up the project environment and ensures reproducibility.
