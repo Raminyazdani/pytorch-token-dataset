@@ -1,5 +1,5 @@
-Ramin Yazdani | pytorch-token-dataset | main | WIP(init): Add .gitignore for Python/Jupyter project
+Ramin Yazdani | pytorch-token-dataset | main | WIP(docs): Add initial README with project overview
 
-Initial repository setup with comprehensive .gitignore patterns. Added exclusions for Python bytecode, build artifacts, virtual environments, Jupyter notebook checkpoints, IDE configuration files, and OS-specific files. This ensures a clean repository from the start by preventing temporary and generated files from being committed.
+Added basic README.md file outlining the project goals and planned features. The README provides initial context for the project's purpose - implementing custom PyTorch Dataset classes for token-based data processing with automatic padding support.
 
-This is the first step in establishing proper repository hygiene and follows industry best practices for Python project initialization.
+This establishes the project's scope and helps future contributors (or ourselves) understand what we're building. At this early stage, the README outlines planned features while actual implementation will follow in subsequent commits.
