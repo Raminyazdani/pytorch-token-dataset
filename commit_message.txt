@@ -1,7 +1,7 @@
-Ramin Yazdani | pytorch-token-dataset | main | WIP(deps): Add requirements.txt with core dependencies
+Ramin Yazdani | pytorch-token-dataset | main | WIP(core): Add TokenDataset class skeleton
 
-Added requirements.txt specifying the core Python dependencies needed for the project: PyTorch for the Dataset interface and tensor operations, NumPy for numerical computing, scikit-learn for train/validation splitting utilities, and Jupyter for the notebook development environment.
+Created initial notebook structure with TokenDataset class definition. Implemented the basic class skeleton extending torch.utils.data.Dataset with placeholder methods for __init__, __len__, and __getitem__.
 
-At this stage, we're including only the dependencies needed for the core TokenDataset functionality. Additional dependencies (like pandas for CSV support) will be added later when that functionality is implemented.
+Added necessary imports for PyTorch Dataset/DataLoader, JSON handling, NumPy arrays, and sklearn's train_test_split utility. This establishes the foundation for implementing the complete dataset functionality in the next commits.
 
-This allows developers to set up the project environment and ensures reproducibility.
+The skeleton follows PyTorch's Dataset interface requirements and sets up the structure for handling token-based data with automatic padding.
