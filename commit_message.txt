@@ -1,7 +1,16 @@
-Ramin Yazdani | pytorch-token-dataset | main | WIP(core): Add TokenDataset class skeleton
+Ramin Yazdani | pytorch-token-dataset | main | feat(core): Implement complete TokenDataset with padding
 
-Created initial notebook structure with TokenDataset class definition. Implemented the basic class skeleton extending torch.utils.data.Dataset with placeholder methods for __init__, __len__, and __getitem__.
+Completed the TokenDataset implementation with full functionality:
+- Load JSON data with token arrays and labels in __init__
+- Calculate and store max sequence length for padding
+- Implement __len__ to return dataset size
+- Implement __getitem__ with automatic padding to max length
+- Convert data to PyTorch tensors for compatibility
 
-Added necessary imports for PyTorch Dataset/DataLoader, JSON handling, NumPy arrays, and sklearn's train_test_split utility. This establishes the foundation for implementing the complete dataset functionality in the next commits.
+Added demonstration cells showing how to:
+- Instantiate the dataset from JSON file
+- Access individual items
+- Integrate with PyTorch DataLoader for batching
+- Split data into train/validation sets
 
-The skeleton follows PyTorch's Dataset interface requirements and sets up the structure for handling token-based data with automatic padding.
+This provides a production-ready custom Dataset class that handles variable-length sequences elegantly through automatic padding, making it suitable for training sequence models.
