@@ -1,16 +1,13 @@
-Ramin Yazdani | pytorch-token-dataset | main | feat(core): Implement complete TokenDataset with padding
+Ramin Yazdani | pytorch-token-dataset | main | WIP(data): Add JSON and CSV data files for demonstrations
 
-Completed the TokenDataset implementation with full functionality:
-- Load JSON data with token arrays and labels in __init__
-- Calculate and store max sequence length for padding
-- Implement __len__ to return dataset size
-- Implement __getitem__ with automatic padding to max length
-- Convert data to PyTorch tensors for compatibility
+Added real data files to enable testing and demonstration of the dataset classes:
+- data.json: Contains 5,574 token sequences with corresponding labels for TokenDataset testing
+- data.csv: Contains 708 rows of structured medical symptom data with disease diagnoses
 
-Added demonstration cells showing how to:
-- Instantiate the dataset from JSON file
-- Access individual items
-- Integrate with PyTorch DataLoader for batching
-- Split data into train/validation sets
+These data files provide realistic examples for demonstrating:
+- Variable-length sequence handling with TokenDataset
+- Structured tabular data processing (for future CSVDataset)
+- Train/validation splitting functionality
+- DataLoader batch processing
 
-This provides a production-ready custom Dataset class that handles variable-length sequences elegantly through automatic padding, making it suitable for training sequence models.
+Data files are placed in the repository root for easy access and portability. The JSON format supports the existing TokenDataset implementation, while CSV data will be used when CSV support is added.
