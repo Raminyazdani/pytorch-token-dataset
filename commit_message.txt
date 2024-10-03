@@ -1,13 +1,11 @@
-Ramin Yazdani | pytorch-token-dataset | main | WIP(data): Add JSON and CSV data files for demonstrations
+Ramin Yazdani | pytorch-token-dataset | main | WIP(feature): Add CSVDataset class for structured data
 
-Added real data files to enable testing and demonstration of the dataset classes:
-- data.json: Contains 5,574 token sequences with corresponding labels for TokenDataset testing
-- data.csv: Contains 708 rows of structured medical symptom data with disease diagnoses
+Implemented CSVDataset class to extend the project's capabilities beyond token sequences to structured tabular data:
+- Reads CSV files using pandas
+- Extracts features and target columns
+- Implements one-hot encoding for categorical labels
+- Follows the same Dataset interface as TokenDataset
 
-These data files provide realistic examples for demonstrating:
-- Variable-length sequence handling with TokenDataset
-- Structured tabular data processing (for future CSVDataset)
-- Train/validation splitting functionality
-- DataLoader batch processing
+OOPS - This commit has a bug! The code uses pd.read_csv() but pandas is not imported anywhere in the notebook. This will cause a NameError when trying to instantiate CSVDataset.
 
-Data files are placed in the repository root for easy access and portability. The JSON format supports the existing TokenDataset implementation, while CSV data will be used when CSV support is added.
+This is a common mistake when adding new functionality - forgetting to add the necessary import statement for a new library. The bug will be caught and fixed in the next commit during testing.
