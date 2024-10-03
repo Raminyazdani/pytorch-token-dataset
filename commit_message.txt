@@ -1,11 +1,14 @@
-Ramin Yazdani | pytorch-token-dataset | main | WIP(feature): Add CSVDataset class for structured data
+Ramin Yazdani | pytorch-token-dataset | main | feat(fix): Add missing pandas import and update dependencies
 
-Implemented CSVDataset class to extend the project's capabilities beyond token sequences to structured tabular data:
-- Reads CSV files using pandas
-- Extracts features and target columns
-- Implements one-hot encoding for categorical labels
-- Follows the same Dataset interface as TokenDataset
+HOTFIX for the bug introduced in the previous commit. Fixed the NameError by:
+- Added "import pandas as pd" to the imports cell
+- Updated requirements.txt to include pandas>=1.3.0 as a dependency
+- Verified CSVDataset now works correctly
 
-OOPS - This commit has a bug! The code uses pd.read_csv() but pandas is not imported anywhere in the notebook. This will cause a NameError when trying to instantiate CSVDataset.
+This is the fix for the import oversight from the previous commit. After attempting to run the CSVDataset code, the missing pandas import was immediately apparent. This represents a typical develop-test-fix cycle where import errors are caught during initial testing.
 
-This is a common mistake when adding new functionality - forgetting to add the necessary import statement for a new library. The bug will be caught and fixed in the next commit during testing.
+The fix ensures that:
+- All necessary libraries are imported
+- Dependencies are properly documented
+- Both TokenDataset and CSVDataset are fully functional
+- The code can be run in a fresh environment
