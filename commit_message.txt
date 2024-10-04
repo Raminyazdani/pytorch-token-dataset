@@ -1,14 +1,18 @@
-Ramin Yazdani | pytorch-token-dataset | main | feat(fix): Add missing pandas import and update dependencies
+Ramin Yazdani | pytorch-token-dataset | main | WIP(docs): Enhance README with comprehensive documentation
 
-HOTFIX for the bug introduced in the previous commit. Fixed the NameError by:
-- Added "import pandas as pd" to the imports cell
-- Updated requirements.txt to include pandas>=1.3.0 as a dependency
-- Verified CSVDataset now works correctly
+Significantly improved the README.md with comprehensive documentation:
+- Added detailed repository structure section
+- Included complete setup and installation instructions
+- Added step-by-step usage guide
+- Documented data file formats and locations
+- Added troubleshooting section for common issues
+- Included reproducibility notes
 
-This is the fix for the import oversight from the previous commit. After attempting to run the CSVDataset code, the missing pandas import was immediately apparent. This represents a typical develop-test-fix cycle where import errors are caught during initial testing.
+The README now provides all the information needed for someone to:
+- Understand the project's purpose and approach
+- Set up the development environment
+- Run the notebook successfully
+- Troubleshoot common problems
+- Understand the data requirements
 
-The fix ensures that:
-- All necessary libraries are imported
-- Dependencies are properly documented
-- Both TokenDataset and CSVDataset are fully functional
-- The code can be run in a fresh environment
+This transforms the basic README into professional documentation suitable for a portfolio project.
