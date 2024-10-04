@@ -1,18 +1,7 @@
-Ramin Yazdani | pytorch-token-dataset | main | WIP(docs): Enhance README with comprehensive documentation
+Ramin Yazdani | pytorch-token-dataset | main | WIP(docs): Add project identity and documentation structure
 
-Significantly improved the README.md with comprehensive documentation:
-- Added detailed repository structure section
-- Included complete setup and installation instructions
-- Added step-by-step usage guide
-- Documented data file formats and locations
-- Added troubleshooting section for common issues
-- Included reproducibility notes
+Started adding portfolio metadata files but made a mistake in the README format. Added placeholder project identity but the README got corrupted during editing - it now has "OOPS: Wrong title format!" in it instead of the proper professional content.
 
-The README now provides all the information needed for someone to:
-- Understand the project's purpose and approach
-- Set up the development environment
-- Run the notebook successfully
-- Troubleshoot common problems
-- Understand the data requirements
+This represents a realistic scenario where you're working on multiple files and accidentally save a work-in-progress version with notes/comments that shouldn't be in the final version. This happens when switching between editing modes or when copy-pasting goes wrong.
 
-This transforms the basic README into professional documentation suitable for a portfolio project.
+Will need to fix the README in the next commit to restore the proper portfolio-ready format.
