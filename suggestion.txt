@@ -1,0 +1,11 @@
+TYPE	FILE	LOCATOR	BEFORE_SNIPPET	PROPOSED_CHANGE	RATIONALE	STATUS
+RENAME	Exercise_2_2.ipynb	filename	Exercise_2_2.ipynb	token_dataset.ipynb	Remove academic exercise naming; use professional descriptive name	APPLIED
+TRACE	README.md	line 33-34	2.2/\n├── Exercise_2_2.ipynb	./\n├── token_dataset.ipynb	Remove old folder path reference and update filename	APPLIED
+TRACE	README.md	line 57	cd 2.2	(remove entire line)	Remove reference to non-existent subdirectory	APPLIED
+TRACE	README.md	line 62	jupyter notebook Exercise_2_2.ipynb	jupyter notebook token_dataset.ipynb	Update notebook filename reference	APPLIED
+TRACE	README.md	line 69	jupyter lab Exercise_2_2.ipynb	jupyter lab token_dataset.ipynb	Update notebook filename reference	APPLIED
+TRACE	README.md	line 121	Originally created in an academic setting	(remove line)	Remove academic reference from portfolio version	APPLIED
+PATH	Exercise_2_2.ipynb	cell output lines 198,200,254,256	C:\\Users\\Ali\\AppData\\Local\\Temp\\...	(clean output cells)	Remove Windows absolute paths from notebook outputs	APPLIED
+STRUCTURE	(root)	missing file	(no .gitignore)	Create .gitignore with Python/Jupyter patterns	Add standard .gitignore for Python projects	APPLIED
+DOC	README.md	line 33	Folder Structure heading	Repository Structure	More appropriate for single-project repo	APPLIED
+DEPENDENCY	requirements.txt	line 4	(pandas missing)	Add pandas>=1.3.0	CSVDataset requires pandas but it was not listed	APPLIED
