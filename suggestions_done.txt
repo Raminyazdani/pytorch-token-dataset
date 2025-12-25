@@ -1,0 +1,11 @@
+FILE	LOCATOR	BEFORE_SNIPPET	AFTER_SNIPPET	NOTES
+Exercise_2_2.ipynb	filename rename	Exercise_2_2.ipynb	token_dataset.ipynb	Renamed notebook to remove academic "Exercise" naming
+token_dataset.ipynb	cells with stderr outputs	Windows path warnings (C:\Users\Ali\...)	(outputs cleared)	Cleaned output cells containing Windows absolute paths
+.gitignore	file creation	(did not exist)	Created with Python/Jupyter patterns	Added standard .gitignore for Python projects
+README.md	line 33	Folder Structure	Repository Structure	Updated heading for single-project repo
+README.md	line 33-34	2.2/\n├── Exercise_2_2.ipynb	./\n├── token_dataset.ipynb	Removed non-existent folder path and updated filename
+README.md	line 57	cd 2.2	(removed)	Removed navigation to non-existent subdirectory
+README.md	line 62	jupyter notebook Exercise_2_2.ipynb	jupyter notebook token_dataset.ipynb	Updated notebook filename reference
+README.md	line 69	jupyter lab Exercise_2_2.ipynb	jupyter lab token_dataset.ipynb	Updated notebook filename reference
+README.md	line 121	Originally created in an academic setting	(removed)	Removed academic reference from Notes section
+requirements.txt	line 4	(pandas not listed)	Added pandas>=1.3.0	CSVDataset uses pandas; dependency was missing
