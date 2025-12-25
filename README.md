@@ -27,11 +27,11 @@ This project demonstrates the implementation of a custom PyTorch Dataset class f
 - **scikit-learn** - Train/validation splitting
 - **Jupyter Notebook** - Interactive development environment
 
-## Folder Structure
+## Repository Structure
 
 ```
-2.2/
-├── Exercise_2_2.ipynb    # Implementation notebook
+./
+├── token_dataset.ipynb    # Implementation notebook
 ├── data.json             # Token sequences and labels (JSON)
 ├── data.csv              # Structured data (CSV)
 ├── requirements.txt      # Python dependencies
@@ -52,21 +52,16 @@ pip install torch numpy scikit-learn jupyter
 
 ## How to Run
 
-1. **Navigate to project directory:**
+1. **Start Jupyter Notebook:**
 ```bash
-cd 2.2
+jupyter notebook token_dataset.ipynb
 ```
 
-2. **Start Jupyter Notebook:**
-```bash
-jupyter notebook Exercise_2_2.ipynb
-```
-
-3. **Execute cells sequentially** from top to bottom
+2. **Execute cells sequentially** from top to bottom
 
 Alternative with JupyterLab:
 ```bash
-jupyter lab Exercise_2_2.ipynb
+jupyter lab token_dataset.ipynb
 ```
 
 ## Data / Inputs
@@ -118,7 +113,6 @@ jupyter lab Exercise_2_2.ipynb
 
 ## Notes
 
-- Originally created in an academic setting
 - TokenDataset includes automatic padding to max sequence length
 - Compatible with PyTorch's standard DataLoader interface
 - Demonstrates best practices for custom dataset implementation
