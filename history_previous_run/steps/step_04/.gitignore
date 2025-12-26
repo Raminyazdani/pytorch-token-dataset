@@ -22,17 +22,15 @@ wheels/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb_checkpoints/
 
-# Environments
-.env
-.venv
-env/
+# Virtual environments
 venv/
+env/
 ENV/
-env.bak/
-venv.bak/
+.venv
 
-# IDEs
+# IDE
 .vscode/
 .idea/
 *.swp
@@ -42,3 +40,8 @@ venv.bak/
 # OS
 .DS_Store
 Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+.cache/
